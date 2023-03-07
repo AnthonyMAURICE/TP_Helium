@@ -1,0 +1,263 @@
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 80px;
+}
+
+.helium-title{
+    width: 50%;
+    padding-left: 10px;
+}
+
+.navbar{
+    width: 50%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+/* section */
+
+.main{
+    margin: 50px 0;
+    display: flex;
+}
+
+.main div{
+    width: 49%;
+}
+
+.main .text-part{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.text-part h1{
+    font-size: 125px;
+}
+
+.main .text-part h2{
+    font-size: 40px;
+    padding: 15px 0;
+    color: rgb(67, 68, 237);
+}
+
+.main .text-part p{
+    font-size: 20px;
+}
+
+.main .img-part{
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+}
+
+.img-part img{
+    height: 100%;
+    width: 100%;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    background-color: rgb(13, 13, 13);
+    width: 100%;
+    padding: 0 30px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+
+}
+
+footer h2{
+    padding: 15px 20px;
+    font-size: 30px;
+}
+
+.core-tech{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 30%;
+}
+
+
+.core-tech .buttons{
+    display: flex;
+    flex-flow: column;
+    margin: 2px 0 20px 0;
+}
+
+.buttons a:hover{
+    background-color: white;
+    color: black;
+}
+
+.core-tech a{
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    margin: 15px 25px;
+    border-radius: 20px;
+    background-color: rgb(71, 76, 254);
+}
+
+.investor{
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.invest-title{
+    padding-top: 15px;
+}
+
+.invest-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 30px 0 50px;
+}
+
+.invest-row img{
+    height: 120px;
+}
+
+/* Medai Querries */
+
+@media screen and (max-width: 1300px){
+    .helium-title{
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+
+    header h1{
+        text-align: center;
+
+    }
+
+    .main{
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .text-part{
+        width: 80%;
+    }
+
+    .text-part h1{
+        font-size: 60px;
+    }
+
+    footer{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    footer h2{
+        width: 275px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .core-tech{
+        width: 100%;
+        align-content: unset;
+    }
+
+    .core-tech .buttons{
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .investor{
+        width: 100%;
+    }
+
+    .invest-row img{
+        height: 75px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+
+    header{
+        flex-flow: column;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    ul{
+        justify-content: space-evenly;
+    }
+
+    li a{
+        padding-right: 0;
+    }
+
+    .core-tech .buttons{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .invest-row{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .invest-row img{
+        height: 120px;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .main .text-part{
+        padding: 15px;
+    }
+
+    .text-part h1{
+        font-size: 50px;
+    }
+
+}

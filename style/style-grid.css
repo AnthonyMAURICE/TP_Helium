@@ -1,0 +1,259 @@
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* header */
+
+header{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.helium-title{
+    padding: 20px;
+    height: 40px;
+}
+
+.navbar{
+    padding: 30px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.second{
+    text-align: center;
+}
+
+.third{
+    text-align: right;
+}
+
+/* fin header */
+
+/* main section */
+
+.main{
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-top: 50px;
+}
+
+.main .text-part{
+    display: grid;
+    align-content: center;
+    padding: 30px;
+}
+
+.text-part h1{
+    font-size: 125px;
+    padding-right: 10%;
+}
+
+.main .text-part h2{
+    font-size: 40px;
+    padding: 15px 0;
+    color: rgb(67, 68, 237);
+}
+
+.main .text-part p{
+    font-size: 20px;
+}
+
+
+.img-part{
+    padding: 20px;
+}
+
+.main img{
+    height: 100%;
+    width: 100%;
+}
+
+/* fin main section */
+
+/* Footer */
+
+footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% auto;
+    background-color: rgb(13, 13, 13);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.buttons{
+    display: grid;
+    align-items: center;
+}
+
+.buttons a:hover{
+    background-color: white;
+    color: black;
+}
+
+.core-tech a{
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    margin: 15px 0;
+    border-radius: 20px;
+    background-color: rgb(71, 76, 254);
+}
+
+.investor{
+    margin-left: 12%;
+}
+
+.invest-row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: 20px;
+    height: 250px;
+    padding-left: 8%;
+}
+
+.invest-row img{
+    height: 100px;
+}
+
+/* fin footer */
+
+/* media querries */
+/* pour tablettes */
+@media screen and (max-width: 1300px){
+
+    /* main */
+    .main{
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    .text-part{
+        justify-items: center;
+    }
+
+    .text-part h1{
+        text-align: center;
+        font-size: 75px;
+        padding-right: 0;
+    }
+    
+    .main .text-part h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .main .text-part p{
+        text-align: center;
+        width: 80%;
+    }
+
+    /* footer */
+    footer{
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    footer h2{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .buttons{
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+    }
+
+    .investor{
+        margin-left: 0;
+    }
+
+    .invest-row{
+        justify-content: space-evenly;
+    }
+}
+/* pour mobiles */
+@media screen and (max-width: 550px){
+    /* header */
+    header{
+        grid-template-columns: none;
+    }
+
+    /* footer */
+
+    footer{
+        height: 800px;
+    }
+    .buttons{
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+    }
+
+    .invest-row{
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+    }
+
+    .invest-row img{
+        height: 75px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    header{
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+
+    .helium-title{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .navbar{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    li{
+        padding: 0 10px;
+    }
+
+    .main .text-part{
+        padding: 15px;
+    }
+
+    .text-part h1{
+        font-size: 50px;
+    }
+
+}

@@ -1,0 +1,293 @@
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header{
+    height: 50px;
+    padding: 0 25px;
+}
+
+header div{
+    display: inline-block;
+    width: 49%;
+    height: 50px;
+}
+
+.helium-title{
+    font-size: 30px;
+    padding: 25px 40px;
+}
+
+.navbar{
+    width: 50%;
+    padding: 0 10px;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+}
+
+li{
+    display: inline-block;
+    font-size: 20px;
+    width: 33%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.second{
+    text-align: center;
+}
+
+.third{
+    text-align: right;
+}
+
+/*Fin header*/
+
+/* main section */
+.main{
+    padding: 50px 25px;
+    margin-top: 50px;
+}
+
+.main div{
+    display: inline-block;
+    width: 49%;
+}
+
+.main .text-part{
+    position: relative;
+    bottom: 160px;
+}
+
+.main .text-part h1{
+    font-size: 125px;
+}
+
+.main .text-part h2{
+    font-size: 40px;
+    padding: 15px 0;
+    color: rgb(67, 68, 237);
+}
+
+.main .text-part p{
+    font-size: 20px;
+}
+
+.main img{
+    height: 100%;
+    width: 100%;
+}
+/* Fin main section */
+
+/* Footer */
+footer{
+    background-color: rgb(13, 13, 13);
+    width: 100%;
+    padding: 0 30px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+footer div{
+    display: inline-block;
+}
+
+footer h2{
+    padding: 15px 20px;
+    font-size: 30px;
+}
+
+.core-tech{
+    width: 30%;
+}
+
+.buttons{
+    margin: 2px 0 20px 0;
+}
+
+.buttons a:hover{
+    background-color: white;
+    color: black;
+}
+
+.core-tech a{
+    display: block;
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    margin: 15px 25px;
+    border-radius: 20px;
+    background-color: rgb(71, 76, 254);
+}
+
+.invest-title{
+    position: relative;
+    bottom: 5px;
+}
+
+.invest-row{
+    margin-left: 40px;
+}
+
+.invest-row img{
+    height: 180px;
+    padding: 50px 100px;
+}
+
+/* Fin footer */
+
+/* Media querries */
+/* Tablettes format paysage ou grande résolution */
+@media screen and (max-width : 1300px) {
+
+/* header */
+.helium-title{
+    font-size: 25px;
+}
+
+li{
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+/* section */
+.main div{
+    display: block;
+    width: 100%;
+    text-align: justify;
+}
+
+.main .text-part{
+    position: initial;
+}
+
+.main .text-part h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+.main .text-part h2{
+    text-align: center;
+}
+
+.main .text-part p{
+    width: 60%;
+    margin: auto;
+}
+
+.main img{
+    margin-top: 35px;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+}
+
+footer div{
+    display: block;
+    width: 100%;
+}
+
+.core-tech{
+    width: 100%;
+    text-align: center;
+}
+
+.buttons{
+    display: inline;
+    margin: auto;
+    width: 250px;
+}
+
+.core-tech a{
+    display: inline-block;
+}
+
+.invest-title{
+    position: initial;
+}
+
+.invest-row{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.invest-row img{
+    height: 180px;
+    padding: 50px 30px;
+}
+}
+
+/* Tablettes format portrait ou moins grande résolution */
+@media screen and (max-width : 800px) {
+
+    .buttons{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width : 550px) {
+
+    /* header */
+    header{
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .helium-title{
+        width: 100%;
+    }
+
+    .navbar{
+        position: relative;
+        top: 25px;
+        width: 100%;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    .third{
+        text-align: center;
+    }
+
+    /* main */
+    .main .text-part{
+        padding: 0;
+        text-align: center;
+    }
+    .main .text-part h1{
+        font-size: 65px;
+    }
+
+}
